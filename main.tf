@@ -24,3 +24,12 @@ resource "aws_instance" "CircleCIIsntance" {
     Name = "CircleCIIsntance"
   }
 }
+
+resource "aws_s3_bucket" "CircleCIBucket" {
+  bucket = "CircleCIBucket"
+
+  tags = {
+    Name = "CircleCIBucket"
+  }
+
+}
