@@ -22,7 +22,10 @@ workflows:
           persist-workspace: true
           requires:
             - terraform/validate
-
+      - hold:
+          type: approval
+          requires:
+            - terraform/plan
       - terraform/apply:
           attach-workspace: true
           context: terraform
