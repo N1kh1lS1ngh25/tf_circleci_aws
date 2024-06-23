@@ -5,6 +5,11 @@ terraform {
       version = "~> 5.0"
     }
   }
+  backend "s3" {
+    bucket = "12scripts"
+    key    = "circleci-tf-backend/terraform.tfstate"
+    region = "ap-south-1"
+  }
 }
 
 #! Configure the AWS Provider
