@@ -26,10 +26,10 @@ resource "aws_instance" "CircleCIIsntance" {
 }
 
 resource "aws_s3_bucket" "circlebucket" {
-  bucket = "circlebucket"
+  bucket = "circlebucket1267"
 
   tags = {
-    Name = "circlebucket"
+    Name = "circlebucket1267"
   }
 
 }
